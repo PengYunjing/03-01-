@@ -9,12 +9,29 @@
 /* Begin PBXBuildFile section */
 		18127E611D2F4E9000847CA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E601D2F4E9000847CA0 /* main.m */; };
 		18127E641D2F4E9000847CA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E631D2F4E9000847CA0 /* AppDelegate.m */; };
-		18127E671D2F4E9000847CA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E661D2F4E9000847CA0 /* ViewController.m */; };
-		18127E6A1D2F4E9000847CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18127E681D2F4E9000847CA0 /* Main.storyboard */; };
 		18127E6C1D2F4E9000847CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18127E6B1D2F4E9000847CA0 /* Assets.xcassets */; };
 		18127E6F1D2F4E9000847CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18127E6D1D2F4E9000847CA0 /* LaunchScreen.storyboard */; };
 		18127E7A1D2F4E9000847CA0 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E791D2F4E9000847CA0 /* _____Tests.m */; };
 		18127E851D2F4E9100847CA0 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E841D2F4E9100847CA0 /* _____UITests.m */; };
+		18127E931D2F4F7800847CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18127E921D2F4F7800847CA0 /* Main.storyboard */; };
+		18127E981D2F4F8900847CA0 /* PYJCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E951D2F4F8900847CA0 /* PYJCalculatorViewController.m */; };
+		18127E991D2F4F8900847CA0 /* PYJMortgageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E971D2F4F8900847CA0 /* PYJMortgageViewController.m */; };
+		18127E9D1D2F6FD300847CA0 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E9C1D2F6FD300847CA0 /* UIImage+animatedGIF.m */; };
+		18127EA41D2F764000847CA0 /* calculator_button.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18127EA31D2F764000847CA0 /* calculator_button.gif */; };
+		18127EA61D2F79F600847CA0 /* setting_button.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18127EA51D2F79F600847CA0 /* setting_button.gif */; };
+		18127EA91D2F7D0D00847CA0 /* PYJSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EA81D2F7D0D00847CA0 /* PYJSettingController.m */; };
+		18127EAD1D2F828400847CA0 /* PYJSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EAC1D2F828400847CA0 /* PYJSettingController.xib */; };
+		18127EB11D2F954100847CA0 /* PYJAboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EAF1D2F954100847CA0 /* PYJAboutUsController.m */; };
+		18127EB21D2F954100847CA0 /* PYJAboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EB01D2F954100847CA0 /* PYJAboutUsController.xib */; };
+		18127EB91D2FA94C00847CA0 /* aboutUs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18127EB81D2FA94C00847CA0 /* aboutUs.txt */; };
+		18127EBC1D2FAF3E00847CA0 /* PYJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EBB1D2FAF3E00847CA0 /* PYJNavigationController.m */; };
+		18127EBF1D2FB18400847CA0 /* UIView+PYJFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EBE1D2FB18400847CA0 /* UIView+PYJFrameExtension.m */; };
+		18127EC21D2FCF8300847CA0 /* PYJCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EC11D2FCF8300847CA0 /* PYJCustomController.m */; };
+		18127EC41D2FCF9100847CA0 /* PYJCustomController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC31D2FCF9100847CA0 /* PYJCustomController.xib */; };
+		18127EC61D2FD31B00847CA0 /* custom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC51D2FD31B00847CA0 /* custom.txt */; };
+		18127ECA1D2FE0A900847CA0 /* PYJSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */; };
+		18127ECB1D2FE0A900847CA0 /* PYJSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */; };
+		18127ECF1D2FE60400847CA0 /* member_ diamond_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +56,6 @@
 		18127E601D2F4E9000847CA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18127E621D2F4E9000847CA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18127E631D2F4E9000847CA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18127E651D2F4E9000847CA0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18127E661D2F4E9000847CA0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		18127E691D2F4E9000847CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18127E6B1D2F4E9000847CA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18127E6E1D2F4E9000847CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18127E701D2F4E9000847CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +65,35 @@
 		18127E801D2F4E9100847CA0 /* 贷款计算器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "贷款计算器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18127E841D2F4E9100847CA0 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		18127E861D2F4E9100847CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18127E921D2F4F7800847CA0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		18127E941D2F4F8900847CA0 /* PYJCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJCalculatorViewController.h; sourceTree = "<group>"; };
+		18127E951D2F4F8900847CA0 /* PYJCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJCalculatorViewController.m; sourceTree = "<group>"; };
+		18127E961D2F4F8900847CA0 /* PYJMortgageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJMortgageViewController.h; sourceTree = "<group>"; };
+		18127E971D2F4F8900847CA0 /* PYJMortgageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJMortgageViewController.m; sourceTree = "<group>"; };
+		18127E9A1D2F5A4F00847CA0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		18127E9B1D2F6FD300847CA0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		18127E9C1D2F6FD300847CA0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		18127EA31D2F764000847CA0 /* calculator_button.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = calculator_button.gif; sourceTree = "<group>"; };
+		18127EA51D2F79F600847CA0 /* setting_button.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = setting_button.gif; sourceTree = "<group>"; };
+		18127EA71D2F7D0D00847CA0 /* PYJSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJSettingController.h; sourceTree = "<group>"; };
+		18127EA81D2F7D0D00847CA0 /* PYJSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJSettingController.m; sourceTree = "<group>"; };
+		18127EAC1D2F828400847CA0 /* PYJSettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJSettingController.xib; sourceTree = "<group>"; };
+		18127EAE1D2F954100847CA0 /* PYJAboutUsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJAboutUsController.h; sourceTree = "<group>"; };
+		18127EAF1D2F954100847CA0 /* PYJAboutUsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJAboutUsController.m; sourceTree = "<group>"; };
+		18127EB01D2F954100847CA0 /* PYJAboutUsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJAboutUsController.xib; sourceTree = "<group>"; };
+		18127EB81D2FA94C00847CA0 /* aboutUs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aboutUs.txt; sourceTree = "<group>"; };
+		18127EBA1D2FAF3E00847CA0 /* PYJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJNavigationController.h; sourceTree = "<group>"; };
+		18127EBB1D2FAF3E00847CA0 /* PYJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJNavigationController.m; sourceTree = "<group>"; };
+		18127EBD1D2FB18400847CA0 /* UIView+PYJFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PYJFrameExtension.h"; sourceTree = "<group>"; };
+		18127EBE1D2FB18400847CA0 /* UIView+PYJFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYJFrameExtension.m"; sourceTree = "<group>"; };
+		18127EC01D2FCF8300847CA0 /* PYJCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJCustomController.h; sourceTree = "<group>"; };
+		18127EC11D2FCF8300847CA0 /* PYJCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJCustomController.m; sourceTree = "<group>"; };
+		18127EC31D2FCF9100847CA0 /* PYJCustomController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJCustomController.xib; sourceTree = "<group>"; };
+		18127EC51D2FD31B00847CA0 /* custom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = custom.txt; sourceTree = "<group>"; };
+		18127EC71D2FE0A900847CA0 /* PYJSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJSettingCell.h; sourceTree = "<group>"; };
+		18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJSettingCell.m; sourceTree = "<group>"; };
+		18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJSettingCell.xib; sourceTree = "<group>"; };
+		18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "member_ diamond_icon.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +144,27 @@
 		18127E5E1D2F4E9000847CA0 /* 贷款计算器 */ = {
 			isa = PBXGroup;
 			children = (
+				18127E921D2F4F7800847CA0 /* Main.storyboard */,
+				18127EBA1D2FAF3E00847CA0 /* PYJNavigationController.h */,
+				18127EBB1D2FAF3E00847CA0 /* PYJNavigationController.m */,
+				18127E961D2F4F8900847CA0 /* PYJMortgageViewController.h */,
+				18127E971D2F4F8900847CA0 /* PYJMortgageViewController.m */,
+				18127E941D2F4F8900847CA0 /* PYJCalculatorViewController.h */,
+				18127E951D2F4F8900847CA0 /* PYJCalculatorViewController.m */,
+				18127EA71D2F7D0D00847CA0 /* PYJSettingController.h */,
+				18127EA81D2F7D0D00847CA0 /* PYJSettingController.m */,
+				18127EAC1D2F828400847CA0 /* PYJSettingController.xib */,
+				18127EC01D2FCF8300847CA0 /* PYJCustomController.h */,
+				18127EC11D2FCF8300847CA0 /* PYJCustomController.m */,
+				18127EC31D2FCF9100847CA0 /* PYJCustomController.xib */,
+				18127EAE1D2F954100847CA0 /* PYJAboutUsController.h */,
+				18127EAF1D2F954100847CA0 /* PYJAboutUsController.m */,
+				18127EB01D2F954100847CA0 /* PYJAboutUsController.xib */,
+				18127EC71D2FE0A900847CA0 /* PYJSettingCell.h */,
+				18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */,
+				18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */,
 				18127E621D2F4E9000847CA0 /* AppDelegate.h */,
 				18127E631D2F4E9000847CA0 /* AppDelegate.m */,
-				18127E651D2F4E9000847CA0 /* ViewController.h */,
-				18127E661D2F4E9000847CA0 /* ViewController.m */,
-				18127E681D2F4E9000847CA0 /* Main.storyboard */,
-				18127E6B1D2F4E9000847CA0 /* Assets.xcassets */,
-				18127E6D1D2F4E9000847CA0 /* LaunchScreen.storyboard */,
-				18127E701D2F4E9000847CA0 /* Info.plist */,
 				18127E5F1D2F4E9000847CA0 /* Supporting Files */,
 			);
 			path = "贷款计算器";
@@ -117,6 +173,14 @@
 		18127E5F1D2F4E9000847CA0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18127EA01D2F706300847CA0 /* Data */,
+				18127E6B1D2F4E9000847CA0 /* Assets.xcassets */,
+				18127EBD1D2FB18400847CA0 /* UIView+PYJFrameExtension.h */,
+				18127EBE1D2FB18400847CA0 /* UIView+PYJFrameExtension.m */,
+				18127E9B1D2F6FD300847CA0 /* UIImage+animatedGIF.h */,
+				18127E9C1D2F6FD300847CA0 /* UIImage+animatedGIF.m */,
+				18127E6D1D2F4E9000847CA0 /* LaunchScreen.storyboard */,
+				18127E701D2F4E9000847CA0 /* Info.plist */,
 				18127E601D2F4E9000847CA0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +202,18 @@
 				18127E861D2F4E9100847CA0 /* Info.plist */,
 			);
 			path = "贷款计算器UITests";
+			sourceTree = "<group>";
+		};
+		18127EA01D2F706300847CA0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				18127EC51D2FD31B00847CA0 /* custom.txt */,
+				18127EB81D2FA94C00847CA0 /* aboutUs.txt */,
+				18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */,
+				18127EA51D2F79F600847CA0 /* setting_button.gif */,
+				18127EA31D2F764000847CA0 /* calculator_button.gif */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +322,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18127EA61D2F79F600847CA0 /* setting_button.gif in Resources */,
+				18127EC61D2FD31B00847CA0 /* custom.txt in Resources */,
+				18127E931D2F4F7800847CA0 /* Main.storyboard in Resources */,
+				18127ECB1D2FE0A900847CA0 /* PYJSettingCell.xib in Resources */,
+				18127EB21D2F954100847CA0 /* PYJAboutUsController.xib in Resources */,
+				18127EAD1D2F828400847CA0 /* PYJSettingController.xib in Resources */,
+				18127EB91D2FA94C00847CA0 /* aboutUs.txt in Resources */,
+				18127ECF1D2FE60400847CA0 /* member_ diamond_icon.gif in Resources */,
 				18127E6F1D2F4E9000847CA0 /* LaunchScreen.storyboard in Resources */,
+				18127EC41D2FCF9100847CA0 /* PYJCustomController.xib in Resources */,
 				18127E6C1D2F4E9000847CA0 /* Assets.xcassets in Resources */,
-				18127E6A1D2F4E9000847CA0 /* Main.storyboard in Resources */,
+				18127EA41D2F764000847CA0 /* calculator_button.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +358,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18127E671D2F4E9000847CA0 /* ViewController.m in Sources */,
+				18127EA91D2F7D0D00847CA0 /* PYJSettingController.m in Sources */,
+				18127E981D2F4F8900847CA0 /* PYJCalculatorViewController.m in Sources */,
+				18127E991D2F4F8900847CA0 /* PYJMortgageViewController.m in Sources */,
+				18127EBC1D2FAF3E00847CA0 /* PYJNavigationController.m in Sources */,
 				18127E641D2F4E9000847CA0 /* AppDelegate.m in Sources */,
+				18127E9D1D2F6FD300847CA0 /* UIImage+animatedGIF.m in Sources */,
+				18127ECA1D2FE0A900847CA0 /* PYJSettingCell.m in Sources */,
 				18127E611D2F4E9000847CA0 /* main.m in Sources */,
+				18127EBF1D2FB18400847CA0 /* UIView+PYJFrameExtension.m in Sources */,
+				18127EC21D2FCF8300847CA0 /* PYJCustomController.m in Sources */,
+				18127EB11D2F954100847CA0 /* PYJAboutUsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,18 +404,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		18127E681D2F4E9000847CA0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18127E691D2F4E9000847CA0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18127E6D1D2F4E9000847CA0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				18127E6E1D2F4E9000847CA0 /* Base */,
+				18127E9A1D2F5A4F00847CA0 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -415,9 +501,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "贷款计算器/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pyj.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.pyj.daikuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -426,9 +514,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "贷款计算器/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pyj.-----";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.pyj.daikuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -499,6 +589,7 @@
 				18127E8B1D2F4E9100847CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18127E8C1D2F4E9100847CA0 /* Build configuration list for PBXNativeTarget "贷款计算器Tests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +598,7 @@
 				18127E8E1D2F4E9100847CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18127E8F1D2F4E9100847CA0 /* Build configuration list for PBXNativeTarget "贷款计算器UITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +607,7 @@
 				18127E911D2F4E9100847CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

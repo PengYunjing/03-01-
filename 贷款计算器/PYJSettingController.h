@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PYJSettingController.h
 //  贷款计算器
 //
 //  Created by Apple on 16/7/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PYJSettingController : UIViewController
 
 @end
-
