@@ -32,6 +32,7 @@
 		18127ECA1D2FE0A900847CA0 /* PYJSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */; };
 		18127ECB1D2FE0A900847CA0 /* PYJSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */; };
 		18127ECF1D2FE60400847CA0 /* member_ diamond_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */; };
+		18F11D541D31C87000F4794F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F11D531D31C87000F4794F /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJSettingCell.m; sourceTree = "<group>"; };
 		18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJSettingCell.xib; sourceTree = "<group>"; };
 		18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "member_ diamond_icon.gif"; sourceTree = "<group>"; };
+		18F11D531D31C87000F4794F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F11D541D31C87000F4794F /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +127,7 @@
 		18127E531D2F4E9000847CA0 = {
 			isa = PBXGroup;
 			children = (
+				18F11D531D31C87000F4794F /* iAd.framework */,
 				18127E5E1D2F4E9000847CA0 /* 贷款计算器 */,
 				18127E781D2F4E9000847CA0 /* 贷款计算器Tests */,
 				18127E831D2F4E9100847CA0 /* 贷款计算器UITests */,

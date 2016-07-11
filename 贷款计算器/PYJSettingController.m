@@ -35,7 +35,7 @@ static NSString * const PYJSettingCellID = @"PYJSettingCellID";
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -48,16 +48,16 @@ static NSString * const PYJSettingCellID = @"PYJSettingCellID";
         cell.imageV.image = [UIImage imageNamed:@"version_button48px"];
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
+//    if (indexPath.row == 1) {
+//        cell.title.text = @"量身定制专业版";
+//        NSURL *url = [[NSBundle mainBundle] URLForResource:@"member_ diamond_icon" withExtension:@"gif"];
+//        cell.imageV.image = [UIImage animatedImageWithAnimatedGIFURL:url];
+//    }
     if (indexPath.row == 1) {
-        cell.title.text = @"量身定制专业版";
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"member_ diamond_icon" withExtension:@"gif"];
-        cell.imageV.image = [UIImage animatedImageWithAnimatedGIFURL:url];
-    }
-    if (indexPath.row == 2) {
         cell.title.text = @"关于我们";
         cell.imageV.image =[UIImage imageNamed:@"we_button48px"];
     }
-    if (indexPath.row == 3) {
+    if (indexPath.row == 2) {
         cell.title.text = @"评价";
         cell.imageV.image = [UIImage imageNamed:@"good_button48px"];
     }
@@ -67,13 +67,13 @@ static NSString * const PYJSettingCellID = @"PYJSettingCellID";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    if (indexPath.row == 1) {
+//        [self method1];
+//    }
     if (indexPath.row == 1) {
-        [self method1];
-    }
-    if (indexPath.row == 2) {
         [self method2];
     }
-    if (indexPath.row == 3) {
+    if (indexPath.row == 2) {
         [self method3];
     }
 }

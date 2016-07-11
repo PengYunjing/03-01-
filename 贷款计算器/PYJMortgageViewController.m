@@ -10,8 +10,9 @@
 #import "PYJCalculatorViewController.h"
 #import "UIImage+animatedGIF.h"
 #import "PYJSettingController.h"
+#import <iAd/iAd.h>
 
-@interface PYJMortgageViewController () <UITableViewDataSource, UITabBarDelegate, UITextFieldDelegate>
+@interface PYJMortgageViewController () <UITableViewDataSource, UITabBarDelegate, UITextFieldDelegate, ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -53,7 +54,7 @@
 
 @property (strong, nonatomic) PYJSettingController *settingVc;
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *rightItem;
+
 @end
 
 @implementation PYJMortgageViewController
@@ -343,5 +344,32 @@
     return YES;
 }
 
+// 广告加载失败
+//- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+//{
+//    NSLog(@"%s", __func__);
+//    self.bannerViewBottom.constant = 0;
+//}
+
+//// 即将加载广告
+//- (void)bannerViewWillLoadAd:(ADBannerView *)banner
+//{
+//    NSLog(@"%s", __func__);
+//}
+//
+//// 广告已经加载
+//- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+//{
+////    self.bannerViewBottomCon.constant = 0;
+////    
+////    [UIView animateWithDuration:0.5 animations:^{
+////        [self.view layoutIfNeeded];
+////    }];
+//}
+//
+//- (void)bannerViewActionDidFinish:(ADBannerView *)banner
+//{
+//    NSLog(@"%s", __func__);
+//}
 
 @end
