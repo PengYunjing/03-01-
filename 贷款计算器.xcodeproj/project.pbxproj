@@ -32,6 +32,8 @@
 		18127ECA1D2FE0A900847CA0 /* PYJSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */; };
 		18127ECB1D2FE0A900847CA0 /* PYJSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */; };
 		18127ECF1D2FE60400847CA0 /* member_ diamond_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */; };
+		18E3A7801D332F4000AD8AC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E3A7821D332F4000AD8AC6 /* InfoPlist.strings */; };
+		18E3A7861D33323700AD8AC6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E3A7881D33323700AD8AC6 /* Localizable.strings */; };
 		18F11D541D31C87000F4794F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F11D531D31C87000F4794F /* iAd.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +73,6 @@
 		18127E951D2F4F8900847CA0 /* PYJCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJCalculatorViewController.m; sourceTree = "<group>"; };
 		18127E961D2F4F8900847CA0 /* PYJMortgageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJMortgageViewController.h; sourceTree = "<group>"; };
 		18127E971D2F4F8900847CA0 /* PYJMortgageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJMortgageViewController.m; sourceTree = "<group>"; };
-		18127E9A1D2F5A4F00847CA0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		18127E9B1D2F6FD300847CA0 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		18127E9C1D2F6FD300847CA0 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		18127EA31D2F764000847CA0 /* calculator_button.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = calculator_button.gif; sourceTree = "<group>"; };
@@ -95,6 +96,10 @@
 		18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJSettingCell.m; sourceTree = "<group>"; };
 		18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJSettingCell.xib; sourceTree = "<group>"; };
 		18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "member_ diamond_icon.gif"; sourceTree = "<group>"; };
+		18E3A7831D332F4800AD8AC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18E3A7891D33323900AD8AC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18E3A78A1D333E1800AD8AC6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		18E3A78B1D333E1800AD8AC6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		18F11D531D31C87000F4794F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -216,6 +221,8 @@
 				18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */,
 				18127EA51D2F79F600847CA0 /* setting_button.gif */,
 				18127EA31D2F764000847CA0 /* calculator_button.gif */,
+				18E3A7821D332F4000AD8AC6 /* InfoPlist.strings */,
+				18E3A7881D33323700AD8AC6 /* Localizable.strings */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -308,6 +315,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 18127E531D2F4E9000847CA0;
 			productRefGroup = 18127E5D1D2F4E9000847CA0 /* Products */;
@@ -329,6 +337,8 @@
 				18127EA61D2F79F600847CA0 /* setting_button.gif in Resources */,
 				18127EC61D2FD31B00847CA0 /* custom.txt in Resources */,
 				18127E931D2F4F7800847CA0 /* Main.storyboard in Resources */,
+				18E3A7861D33323700AD8AC6 /* Localizable.strings in Resources */,
+				18E3A7801D332F4000AD8AC6 /* InfoPlist.strings in Resources */,
 				18127ECB1D2FE0A900847CA0 /* PYJSettingCell.xib in Resources */,
 				18127EB21D2F954100847CA0 /* PYJAboutUsController.xib in Resources */,
 				18127EAD1D2F828400847CA0 /* PYJSettingController.xib in Resources */,
@@ -412,9 +422,26 @@
 			isa = PBXVariantGroup;
 			children = (
 				18127E6E1D2F4E9000847CA0 /* Base */,
-				18127E9A1D2F5A4F00847CA0 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		18E3A7821D332F4000AD8AC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E3A7831D332F4800AD8AC6 /* en */,
+				18E3A78A1D333E1800AD8AC6 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18E3A7881D33323700AD8AC6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E3A7891D33323900AD8AC6 /* en */,
+				18E3A78B1D333E1800AD8AC6 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -456,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -493,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

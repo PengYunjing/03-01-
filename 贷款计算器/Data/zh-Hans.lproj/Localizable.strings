@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  贷款计算器
+
+  Created by Apple on 16/7/11.
+  Copyright © 2016年 PYJ. All rights reserved.
+*/
+
+"titleKey" = "贷款计算器";
+
+"totalLoanKey" = "贷款总额";
+
+"totalLoanPlaceholderKey" = "请输入金额...";
+
+"mortgageYearKey" = "按揭年数";
+
+"mortgageYearPlaceholderKey" = "请输入期限...";
+
+"annualRateKey" = "年利率";
+
+"annualRatePlaceholderKey" = "请输入利率...";
+
+"totalLoanUnitKey" = "万";
+
+"mortgageYearUnitKey" = "年";
+
+"equalInstallmentPaymentKey" = "等额本息";
+
+"equalRepaymentOfPrincipalKey" = "等额本金";
+
+"computeKey" = "计算";
+
+"emptyKey" = "清空";
+
+"TotalAmountOfRepaymentKey" = "累计返款总额(元)";
+
+"TotalPaymentOfInterestKey" = "累计支付利息(元)";
+
+"eachRepaymentAmountKey" = "每期还款(元)";
+
+"numberKey" = "期数";
+
+"paymentKey" = "本期还款(本金/利息)(元)";
+

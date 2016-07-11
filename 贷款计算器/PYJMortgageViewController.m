@@ -52,8 +52,33 @@
 
 @property (strong, nonatomic) PYJCalculatorViewController *calculatorVc;
 
-@property (strong, nonatomic) PYJSettingController *settingVc;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *totalLoanLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *mortgageYearLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *annualRateLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *totalLoanUnitLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *mortgageYearUnitLabel;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *methodSegment;
+
+@property (weak, nonatomic) IBOutlet UIButton *computeButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *emptyButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *TotalAmountOfRepaymentLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *TotalPaymentOfInterestLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *eachRepaymentAmountLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *numberLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *paymentLabel;
 
 @end
 
@@ -78,7 +103,25 @@
     
     self.navigationController.navigationBarHidden = YES;
     
-    self.title = @"贷款计算器";
+    self.titleLabel.text = NSLocalizedString(@"titleKey", nil);
+    self.totalLoanLabel.text = NSLocalizedString(@"totalLoanKey", nil);
+    self.mortgageYearLabel.text = NSLocalizedString(@"mortgageYearKey", nil);
+    self.annualRateLabel.text = NSLocalizedString(@"annualRateKey", nil);
+    self.totalLoanUnitLabel.text = NSLocalizedString(@"totalLoanUnitKey", nil);
+    self.mortgageYearUnitLabel.text = NSLocalizedString(@"mortgageYearUnitKey", nil);
+    self.principalField.placeholder = NSLocalizedString(@"totalLoanPlaceholderKey", nil);
+    self.durationTime.placeholder = NSLocalizedString(@"mortgageYearPlaceholderKey", nil);
+    self.rate.placeholder = NSLocalizedString(@"annualRatePlaceholderKey", nil);
+    [self.methodSegment setTitle:NSLocalizedString(@"equalInstallmentPaymentKey", nil) forSegmentAtIndex:0];
+    [self.methodSegment setTitle:NSLocalizedString(@"equalRepaymentOfPrincipalKey", nil) forSegmentAtIndex:1];
+    [self.computeButton setTitle:NSLocalizedString(@"computeKey", nil) forState:UIControlStateNormal];
+    [self.emptyButton setTitle:NSLocalizedString(@"emptyKey", nil) forState:UIControlStateNormal];
+    self.TotalAmountOfRepaymentLabel.text = NSLocalizedString(@"TotalAmountOfRepaymentKey", nil);
+    self.TotalPaymentOfInterestLabel.text = NSLocalizedString(@"TotalPaymentOfInterestKey", nil);
+    self.eachRepaymentAmountLabel.text = NSLocalizedString(@"eachRepaymentAmountKey", nil);
+    self.numberLabel.text = NSLocalizedString(@"numberKey", nil);
+    self.paymentLabel.text = NSLocalizedString(@"paymentKey", nil);
+
     
     NSURL *urlCalculator = [[NSBundle mainBundle] URLForResource:@"calculator_button" withExtension:@"gif"];
     [self.calculatorButton setImage:[UIImage animatedImageWithAnimatedGIFURL:urlCalculator] forState:UIControlStateNormal];
