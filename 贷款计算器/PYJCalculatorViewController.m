@@ -16,9 +16,10 @@
 @property (weak, nonatomic) UILabel *showLabel;
 @property (strong, nonatomic) NSMutableString *string;
 @property (assign, nonatomic) double num1, num2;
-@property (strong, nonatomic) NSString *str;
+@property (copy, nonatomic) NSString *str;
 @property (weak, nonatomic) UIView *swipeView;
-@property (strong, nonatomic) UIButton *selectedBtn;
+@property (weak, nonatomic) UIButton *selectedBtn;
+@property (weak, nonatomic) UIView *frameinView;
 
 @end
 
@@ -32,8 +33,9 @@
     
     // 创建一个View用来存放手势
     UIView *swipeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, windowW, windowH * 2 / 7)];
-    _swipeView = swipeView;
     [self.view addSubview:_swipeView];
+    [self.view insertSubview:swipeView atIndex:0];
+    _swipeView = swipeView;
     
     self.view.backgroundColor = [UIColor blackColor];
     
@@ -49,9 +51,10 @@
     disLabel.text = @"0";
     [disLabel setNumberOfLines:0];
     disLabel.adjustsFontSizeToFitWidth = YES; // 一行显示不下，若设置此属性为YES，则会降低字体大小，以显示全部内容。
-    
-    _showLabel = disLabel;
     [self.view addSubview:disLabel];
+    [self setUpLongPress]; //增加长按复制手势
+    _showLabel = disLabel;
+    
     
     // 创建按钮
     CGFloat btnW = windowW / 4;
@@ -414,6 +417,39 @@
         [self.navigationController popViewControllerAnimated:NO];
     }];
     
+}
+
+#pragma mark - 为label增加复制功能
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    return (action == @selector(copy:));
+}
+
+- (void)copy:(id)sender
+{
+    UIPasteboard *pboard = [UIPasteboard generalPasteboard];
+    pboard.string = self.showLabel.text;
+}
+
+- (void)setUpLongPress
+{
+//    self.showLabel.userInteractionEnabled = YES;
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
+    [self.swipeView addGestureRecognizer:longPress];
+}
+
+- (void)longPress:(UILongPressGestureRecognizer *)longPress1
+{
+    [self becomeFirstResponder];
+    UIMenuItem *copyLink = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(copy:)];
+    [[UIMenuController sharedMenuController] setMenuItems:[NSArray arrayWithObjects:copyLink, nil]];
+    [[UIMenuController sharedMenuController] setTargetRect:self.showLabel.frame inView:self.showLabel.superview];
+    [[UIMenuController sharedMenuController] setMenuVisible:YES animated:YES];
 }
 
 

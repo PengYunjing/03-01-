@@ -1,0 +1,37 @@
+/* 
+  English.strings
+  贷款计算器
+
+  Created by Apple on 16/7/11.
+  Copyright © 2016年 PYJ. All rights reserved.
+*/
+
+"titleKey" = "Loan calculator";
+"totalLoanKey" = "Total loan";
+"totalLoanPlaceholderKey" = "Please enter...";
+"mortgageYearKey" = "Mortgage year";
+"mortgageYearPlaceholderKey" = "Please enter...";
+"annualRateKey" = "Annual rate";
+"annualRatePlaceholderKey" = "Please enter...";
+"totalLoanUnitKey" = "$";
+"mortgageYearUnitKey" = "year";
+"equalInstallmentPaymentKey" = "Equal installment";
+"equalRepaymentOfPrincipalKey" = "Equal of principal";
+"computeKey" = "Compute";
+"emptyKey" = "Empty";
+"TotalAmountOfRepaymentKey" = "Amount of repayment($)";
+"TotalPaymentOfInterestKey" = "Amount of interest($)";
+"eachRepaymentAmountKey" = "Each repayment($)";
+"numberKey" = "No.";
+"paymentKey" = "Payment(Principal/Interest)($)";
+"irregularKey" = "irregular";
+"warningEnterAmountKey" = "Please enter the total amount of the loan($)";
+"warningLoanPeriodKey" = "Please enter the loan period (year)";
+"warningAnnualInterestRateKey" = "Please enter the annual interest rate(%)";
+"okKey" = "OK";
+"settingTitleKey" = "Settings";
+"versionKey" = "Version: 1.0";
+"languageTypeKey" = "Language";
+"aboutKey" = "About";
+"appraiseKey" = "Appraise";
+"settingLanguageTitleKey" = "Languages";

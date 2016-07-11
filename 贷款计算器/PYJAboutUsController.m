@@ -15,10 +15,29 @@
 
 @implementation PYJAboutUsController
 
+- (void)viewWillAppear:(BOOL)animated{
+
+    if (LanguageManager.languageChange) {
+        
+        [self viewDidLoad];
+        
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *string = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"aboutUs.txt" ofType:nil] encoding:NSUTF8StringEncoding error:nil];
+    self.title = LanguageForKey(@"aboutKey");
+    
+    NSString *stringName = nil;
+    if ([LanguageManager.dataName isEqualToString:@"English.strings"]) {
+        stringName = @"aboutUsEN.txt";
+    }
+    if ([LanguageManager.dataName isEqualToString:@"Chanese.strings"]) {
+        stringName = @"aboutUsCHS.txt";
+    }
+    
+    NSString *string = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:stringName ofType:nil] encoding:NSUTF8StringEncoding error:nil];
     
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:string];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];

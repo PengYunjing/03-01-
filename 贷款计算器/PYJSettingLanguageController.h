@@ -1,5 +1,5 @@
 //
-//  PYJCustomController.h
+//  PYJSettingLanguageController.h
 //  贷款计算器
 //
 //  Created by Apple on 16/7/8.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PYJCustomController : UIViewController
+@interface PYJSettingLanguageController : UIViewController
 
 @end

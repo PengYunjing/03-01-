@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  贷款计算器
+//
+//  Created by Apple on 16/7/11.
+//  Copyright © 2016年 PYJ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+/*************************/
+
+
+#import "PYJLanguageManager.h"
+#import "UIView+PYJFrameExtension.h"
+
+#define LanguageManager [PYJLanguageManager sharedPYJLanguageManager]
+
+#define LanguageForKey(key) [LanguageManager.languageDict objectForKey:(key)]
+
+#define LANGUAGE_SET @"langeuageSet"
+
+
+/*************************/
+#endif

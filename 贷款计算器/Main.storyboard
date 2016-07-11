@@ -8,7 +8,7 @@
         <!--Mortgage View Controller-->
         <scene sceneID="oes-g9-FW2">
             <objects>
-                <viewController id="w9j-WQ-wkT" customClass="PYJMortgageViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mortgageVc" id="w9j-WQ-wkT" customClass="PYJMortgageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aIt-3Z-UfT"/>
                         <viewControllerLayoutGuide type="bottom" id="V0t-nI-XKj"/>
@@ -88,7 +88,7 @@
                                 </state>
                                 <state key="highlighted" backgroundImage="clearButton_selected"/>
                                 <connections>
-                                    <action selector="cleanBtn:" destination="w9j-WQ-wkT" eventType="touchUpInside" id="T6c-kC-DQ3"/>
+                                    <action selector="clean" destination="w9j-WQ-wkT" eventType="touchUpInside" id="MT4-AC-ilL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErZ-uC-Nxo">
@@ -167,7 +167,7 @@
                                     <action selector="setting" destination="w9j-WQ-wkT" eventType="touchUpInside" id="w5z-xq-ZkJ"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCC-s0-ChK">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCC-s0-ChK">
                                 <rect key="frame" x="0.0" y="269" width="375" height="398"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计还款总额(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtd-iO-iAX">
@@ -385,7 +385,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NoC-4e-ttR">
             <objects>
-                <navigationController id="eDY-QJ-Rgt" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="rootnav" id="eDY-QJ-Rgt" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wvY-6z-9IO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

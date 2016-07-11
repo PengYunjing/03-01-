@@ -12,6 +12,9 @@
 #import "PYJSettingController.h"
 #import <iAd/iAd.h>
 
+
+#define AppLanguage @"appLanguage"
+#define CustomLocalizedString(key, comment)
 @interface PYJMortgageViewController () <UITableViewDataSource, UITabBarDelegate, UITextFieldDelegate, ADBannerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -80,9 +83,20 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *paymentLabel;
 
+@property (strong, nonatomic) NSDictionary *languageDict;
+
+
 @end
 
 @implementation PYJMortgageViewController
+
+#pragma mark - 懒加载
+- (NSDictionary *)languageDict{
+    if (!_languageDict) {
+        _languageDict = [NSDictionary dictionary];
+    }
+    return _languageDict;
+}
 
 - (NSMutableArray *)everyMoney{
     if (_everyMoney == nil) {
@@ -98,30 +112,55 @@
     return _monthsArray;
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+
+    self.navigationController.navigationBarHidden = YES;
+    
+    if (LanguageManager.languageChange) {
+        
+        [self viewDidLoad];
+        [self clean];
+        
+        LanguageManager.languageChange = NO;
+    }
+}
+
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    self.navigationController.navigationBarHidden = YES;
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:LANGUAGE_SET]) { //设置默认语言
+        [def setObject:NSLocalizedString(@"languageStringsName", nil) forKey:LANGUAGE_SET];
+        [def synchronize];
+    }
     
-    self.titleLabel.text = NSLocalizedString(@"titleKey", nil);
-    self.totalLoanLabel.text = NSLocalizedString(@"totalLoanKey", nil);
-    self.mortgageYearLabel.text = NSLocalizedString(@"mortgageYearKey", nil);
-    self.annualRateLabel.text = NSLocalizedString(@"annualRateKey", nil);
-    self.totalLoanUnitLabel.text = NSLocalizedString(@"totalLoanUnitKey", nil);
-    self.mortgageYearUnitLabel.text = NSLocalizedString(@"mortgageYearUnitKey", nil);
-    self.principalField.placeholder = NSLocalizedString(@"totalLoanPlaceholderKey", nil);
-    self.durationTime.placeholder = NSLocalizedString(@"mortgageYearPlaceholderKey", nil);
-    self.rate.placeholder = NSLocalizedString(@"annualRatePlaceholderKey", nil);
-    [self.methodSegment setTitle:NSLocalizedString(@"equalInstallmentPaymentKey", nil) forSegmentAtIndex:0];
-    [self.methodSegment setTitle:NSLocalizedString(@"equalRepaymentOfPrincipalKey", nil) forSegmentAtIndex:1];
-    [self.computeButton setTitle:NSLocalizedString(@"computeKey", nil) forState:UIControlStateNormal];
-    [self.emptyButton setTitle:NSLocalizedString(@"emptyKey", nil) forState:UIControlStateNormal];
-    self.TotalAmountOfRepaymentLabel.text = NSLocalizedString(@"TotalAmountOfRepaymentKey", nil);
-    self.TotalPaymentOfInterestLabel.text = NSLocalizedString(@"TotalPaymentOfInterestKey", nil);
-    self.eachRepaymentAmountLabel.text = NSLocalizedString(@"eachRepaymentAmountKey", nil);
-    self.numberLabel.text = NSLocalizedString(@"numberKey", nil);
-    self.paymentLabel.text = NSLocalizedString(@"paymentKey", nil);
-
+    LanguageManager.dataName = [[NSUserDefaults standardUserDefaults] objectForKey:LANGUAGE_SET];
+    LanguageManager.languageDict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:LanguageManager.dataName ofType:nil]];
+   
+    
+    UIBarButtonItem *backButton = [UIBarButtonItem appearance];
+    backButton = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain  target:self action:nil];
+    self.navigationItem.backBarButtonItem = backButton;
+    
+    self.titleLabel.text = LanguageForKey(@"totalLoanKey");
+    self.totalLoanLabel.text = LanguageForKey(@"totalLoanKey");
+    self.mortgageYearLabel.text = LanguageForKey(@"mortgageYearKey");
+    self.annualRateLabel.text = LanguageForKey(@"annualRateKey");
+    self.totalLoanUnitLabel.text = LanguageForKey(@"totalLoanUnitKey");
+    self.mortgageYearUnitLabel.text = LanguageForKey(@"mortgageYearUnitKey");
+    self.principalField.placeholder = LanguageForKey(@"totalLoanPlaceholderKey");
+    self.durationTime.placeholder = LanguageForKey(@"mortgageYearPlaceholderKey");
+    self.rate.placeholder = LanguageForKey(@"annualRatePlaceholderKey");
+    [self.methodSegment setTitle:LanguageForKey(@"equalInstallmentPaymentKey") forSegmentAtIndex:0];
+    [self.methodSegment setTitle:LanguageForKey(@"equalRepaymentOfPrincipalKey") forSegmentAtIndex:1];
+    [self.computeButton setTitle:LanguageForKey(@"computeKey") forState:UIControlStateNormal];
+    [self.emptyButton setTitle:LanguageForKey(@"emptyKey") forState:UIControlStateNormal];
+    self.TotalAmountOfRepaymentLabel.text = LanguageForKey(@"TotalAmountOfRepaymentKey");
+    self.TotalPaymentOfInterestLabel.text = LanguageForKey(@"TotalPaymentOfInterestKey");
+    self.eachRepaymentAmountLabel.text = LanguageForKey(@"eachRepaymentAmountKey");
+    self.numberLabel.text = LanguageForKey(@"numberKey");
+    self.paymentLabel.text = LanguageForKey(@"paymentKey");
+ 
     
     NSURL *urlCalculator = [[NSBundle mainBundle] URLForResource:@"calculator_button" withExtension:@"gif"];
     [self.calculatorButton setImage:[UIImage animatedImageWithAnimatedGIFURL:urlCalculator] forState:UIControlStateNormal];
@@ -164,13 +203,13 @@
 - (IBAction)compute{
     
     if (self.principalField.text.length == 0) {
-        [self showWithTitle:@"请输入贷款总额(万元)"];
+        [self showWithTitle:LanguageForKey(@"warningEnterAmountKey")];
         return;
     }else if (self.durationTime.text.length == 0) {
-        [self showWithTitle:@"请输入按揭年数(年)"];
+        [self showWithTitle:LanguageForKey(@"warningLoanPeriodKey")];
         return;
     }else if (self.rate.text.length == 0) {
-        [self showWithTitle:@"请输入年利率(%)"];
+        [self showWithTitle:LanguageForKey(@"warningAnnualInterestRateKey")];
         return;
     }else {
         
@@ -270,7 +309,7 @@
     self.mm = p / n;
     double y = self.mm * i; // 每月利息减少金额
     self.mi = p * i;
-    self.everyRepayment.text = @"不固定";
+    self.everyRepayment.text = LanguageForKey(@"irregularKey");
     
     for (NSUInteger x = 1 ; x < n + 1; x++) {
         
@@ -315,14 +354,14 @@
 - (void)showWithTitle:(NSString *)title{
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:nil preferredStyle:(UIAlertControllerStyleAlert)];
-    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleCancel) handler:nil];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:LanguageForKey(@"okKey") style:(UIAlertActionStyleCancel) handler:nil];
     [alert addAction:action];
     [self presentViewController:alert animated:YES completion:nil];
     
 }
 
 #pragma mark - 清空所有
-- (IBAction)cleanBtn:(id)sender {
+- (IBAction)clean {
     [self.view endEditing:YES];
     self.principalField.text = nil;
     self.durationTime.text = nil;

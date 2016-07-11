@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180E37591D33925200FB2399 /* English.strings in Resources */ = {isa = PBXBuildFile; fileRef = 180E37581D33925200FB2399 /* English.strings */; };
+		180E375B1D33927000FB2399 /* Chanese.strings in Resources */ = {isa = PBXBuildFile; fileRef = 180E375A1D33927000FB2399 /* Chanese.strings */; };
+		180ED04E1D33B2860053CFAC /* PYJCHSLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 180ED04D1D33B2860053CFAC /* PYJCHSLanguage.m */; };
+		180ED0511D33C5540053CFAC /* PYJLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 180ED0501D33C5540053CFAC /* PYJLanguageManager.m */; };
+		180ED0541D33FBBC0053CFAC /* aboutUsEN.txt in Resources */ = {isa = PBXBuildFile; fileRef = 180ED0521D33FBBC0053CFAC /* aboutUsEN.txt */; };
+		180ED0551D33FBBC0053CFAC /* aboutUsCHS.txt in Resources */ = {isa = PBXBuildFile; fileRef = 180ED0531D33FBBC0053CFAC /* aboutUsCHS.txt */; };
 		18127E611D2F4E9000847CA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E601D2F4E9000847CA0 /* main.m */; };
 		18127E641D2F4E9000847CA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127E631D2F4E9000847CA0 /* AppDelegate.m */; };
 		18127E6C1D2F4E9000847CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18127E6B1D2F4E9000847CA0 /* Assets.xcassets */; };
@@ -23,12 +29,10 @@
 		18127EAD1D2F828400847CA0 /* PYJSettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EAC1D2F828400847CA0 /* PYJSettingController.xib */; };
 		18127EB11D2F954100847CA0 /* PYJAboutUsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EAF1D2F954100847CA0 /* PYJAboutUsController.m */; };
 		18127EB21D2F954100847CA0 /* PYJAboutUsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EB01D2F954100847CA0 /* PYJAboutUsController.xib */; };
-		18127EB91D2FA94C00847CA0 /* aboutUs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18127EB81D2FA94C00847CA0 /* aboutUs.txt */; };
 		18127EBC1D2FAF3E00847CA0 /* PYJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EBB1D2FAF3E00847CA0 /* PYJNavigationController.m */; };
 		18127EBF1D2FB18400847CA0 /* UIView+PYJFrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EBE1D2FB18400847CA0 /* UIView+PYJFrameExtension.m */; };
-		18127EC21D2FCF8300847CA0 /* PYJCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EC11D2FCF8300847CA0 /* PYJCustomController.m */; };
-		18127EC41D2FCF9100847CA0 /* PYJCustomController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC31D2FCF9100847CA0 /* PYJCustomController.xib */; };
-		18127EC61D2FD31B00847CA0 /* custom.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC51D2FD31B00847CA0 /* custom.txt */; };
+		18127EC21D2FCF8300847CA0 /* PYJSettingLanguageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EC11D2FCF8300847CA0 /* PYJSettingLanguageController.m */; };
+		18127EC41D2FCF9100847CA0 /* PYJSettingLanguageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC31D2FCF9100847CA0 /* PYJSettingLanguageController.xib */; };
 		18127ECA1D2FE0A900847CA0 /* PYJSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */; };
 		18127ECB1D2FE0A900847CA0 /* PYJSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */; };
 		18127ECF1D2FE60400847CA0 /* member_ diamond_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */; };
@@ -55,6 +59,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180E37571D33800500FB2399 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		180E37581D33925200FB2399 /* English.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = English.strings; sourceTree = "<group>"; };
+		180E375A1D33927000FB2399 /* Chanese.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Chanese.strings; sourceTree = "<group>"; };
+		180ED0491D33AE6C0053CFAC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		180ED04A1D33AE6C0053CFAC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		180ED04B1D33AE6C0053CFAC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		180ED04C1D33B2860053CFAC /* PYJCHSLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJCHSLanguage.h; sourceTree = "<group>"; };
+		180ED04D1D33B2860053CFAC /* PYJCHSLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJCHSLanguage.m; sourceTree = "<group>"; };
+		180ED04F1D33C5540053CFAC /* PYJLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJLanguageManager.h; sourceTree = "<group>"; };
+		180ED0501D33C5540053CFAC /* PYJLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJLanguageManager.m; sourceTree = "<group>"; };
+		180ED0521D33FBBC0053CFAC /* aboutUsEN.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aboutUsEN.txt; sourceTree = "<group>"; };
+		180ED0531D33FBBC0053CFAC /* aboutUsCHS.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aboutUsCHS.txt; sourceTree = "<group>"; };
 		18127E5C1D2F4E9000847CA0 /* 贷款计算器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "贷款计算器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18127E601D2F4E9000847CA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18127E621D2F4E9000847CA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,23 +99,19 @@
 		18127EAE1D2F954100847CA0 /* PYJAboutUsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJAboutUsController.h; sourceTree = "<group>"; };
 		18127EAF1D2F954100847CA0 /* PYJAboutUsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJAboutUsController.m; sourceTree = "<group>"; };
 		18127EB01D2F954100847CA0 /* PYJAboutUsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJAboutUsController.xib; sourceTree = "<group>"; };
-		18127EB81D2FA94C00847CA0 /* aboutUs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aboutUs.txt; sourceTree = "<group>"; };
 		18127EBA1D2FAF3E00847CA0 /* PYJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJNavigationController.h; sourceTree = "<group>"; };
 		18127EBB1D2FAF3E00847CA0 /* PYJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJNavigationController.m; sourceTree = "<group>"; };
 		18127EBD1D2FB18400847CA0 /* UIView+PYJFrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PYJFrameExtension.h"; sourceTree = "<group>"; };
 		18127EBE1D2FB18400847CA0 /* UIView+PYJFrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYJFrameExtension.m"; sourceTree = "<group>"; };
-		18127EC01D2FCF8300847CA0 /* PYJCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJCustomController.h; sourceTree = "<group>"; };
-		18127EC11D2FCF8300847CA0 /* PYJCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJCustomController.m; sourceTree = "<group>"; };
-		18127EC31D2FCF9100847CA0 /* PYJCustomController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJCustomController.xib; sourceTree = "<group>"; };
-		18127EC51D2FD31B00847CA0 /* custom.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = custom.txt; sourceTree = "<group>"; };
+		18127EC01D2FCF8300847CA0 /* PYJSettingLanguageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJSettingLanguageController.h; sourceTree = "<group>"; };
+		18127EC11D2FCF8300847CA0 /* PYJSettingLanguageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJSettingLanguageController.m; sourceTree = "<group>"; };
+		18127EC31D2FCF9100847CA0 /* PYJSettingLanguageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJSettingLanguageController.xib; sourceTree = "<group>"; };
 		18127EC71D2FE0A900847CA0 /* PYJSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYJSettingCell.h; sourceTree = "<group>"; };
 		18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYJSettingCell.m; sourceTree = "<group>"; };
 		18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PYJSettingCell.xib; sourceTree = "<group>"; };
 		18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "member_ diamond_icon.gif"; sourceTree = "<group>"; };
 		18E3A7831D332F4800AD8AC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18E3A7891D33323900AD8AC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		18E3A78A1D333E1800AD8AC6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		18E3A78B1D333E1800AD8AC6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		18F11D531D31C87000F4794F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -154,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				18127E921D2F4F7800847CA0 /* Main.storyboard */,
+				180ED04F1D33C5540053CFAC /* PYJLanguageManager.h */,
+				180ED0501D33C5540053CFAC /* PYJLanguageManager.m */,
 				18127EBA1D2FAF3E00847CA0 /* PYJNavigationController.h */,
 				18127EBB1D2FAF3E00847CA0 /* PYJNavigationController.m */,
 				18127E961D2F4F8900847CA0 /* PYJMortgageViewController.h */,
@@ -163,15 +177,17 @@
 				18127EA71D2F7D0D00847CA0 /* PYJSettingController.h */,
 				18127EA81D2F7D0D00847CA0 /* PYJSettingController.m */,
 				18127EAC1D2F828400847CA0 /* PYJSettingController.xib */,
-				18127EC01D2FCF8300847CA0 /* PYJCustomController.h */,
-				18127EC11D2FCF8300847CA0 /* PYJCustomController.m */,
-				18127EC31D2FCF9100847CA0 /* PYJCustomController.xib */,
+				18127EC01D2FCF8300847CA0 /* PYJSettingLanguageController.h */,
+				18127EC11D2FCF8300847CA0 /* PYJSettingLanguageController.m */,
+				18127EC31D2FCF9100847CA0 /* PYJSettingLanguageController.xib */,
 				18127EAE1D2F954100847CA0 /* PYJAboutUsController.h */,
 				18127EAF1D2F954100847CA0 /* PYJAboutUsController.m */,
 				18127EB01D2F954100847CA0 /* PYJAboutUsController.xib */,
 				18127EC71D2FE0A900847CA0 /* PYJSettingCell.h */,
 				18127EC81D2FE0A900847CA0 /* PYJSettingCell.m */,
 				18127EC91D2FE0A900847CA0 /* PYJSettingCell.xib */,
+				180ED04C1D33B2860053CFAC /* PYJCHSLanguage.h */,
+				180ED04D1D33B2860053CFAC /* PYJCHSLanguage.m */,
 				18127E621D2F4E9000847CA0 /* AppDelegate.h */,
 				18127E631D2F4E9000847CA0 /* AppDelegate.m */,
 				18127E5F1D2F4E9000847CA0 /* Supporting Files */,
@@ -184,6 +200,7 @@
 			children = (
 				18127EA01D2F706300847CA0 /* Data */,
 				18127E6B1D2F4E9000847CA0 /* Assets.xcassets */,
+				180E37571D33800500FB2399 /* PrefixHeader.pch */,
 				18127EBD1D2FB18400847CA0 /* UIView+PYJFrameExtension.h */,
 				18127EBE1D2FB18400847CA0 /* UIView+PYJFrameExtension.m */,
 				18127E9B1D2F6FD300847CA0 /* UIImage+animatedGIF.h */,
@@ -216,13 +233,15 @@
 		18127EA01D2F706300847CA0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				18127EC51D2FD31B00847CA0 /* custom.txt */,
-				18127EB81D2FA94C00847CA0 /* aboutUs.txt */,
+				180ED0521D33FBBC0053CFAC /* aboutUsEN.txt */,
+				180ED0531D33FBBC0053CFAC /* aboutUsCHS.txt */,
 				18127ECE1D2FE60400847CA0 /* member_ diamond_icon.gif */,
 				18127EA51D2F79F600847CA0 /* setting_button.gif */,
 				18127EA31D2F764000847CA0 /* calculator_button.gif */,
 				18E3A7821D332F4000AD8AC6 /* InfoPlist.strings */,
 				18E3A7881D33323700AD8AC6 /* Localizable.strings */,
+				180E37581D33925200FB2399 /* English.strings */,
+				180E375A1D33927000FB2399 /* Chanese.strings */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -289,6 +308,7 @@
 		18127E541D2F4E9000847CA0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PYJ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = PYJ;
 				TargetAttributes = {
@@ -335,17 +355,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				18127EA61D2F79F600847CA0 /* setting_button.gif in Resources */,
-				18127EC61D2FD31B00847CA0 /* custom.txt in Resources */,
 				18127E931D2F4F7800847CA0 /* Main.storyboard in Resources */,
 				18E3A7861D33323700AD8AC6 /* Localizable.strings in Resources */,
+				180E37591D33925200FB2399 /* English.strings in Resources */,
 				18E3A7801D332F4000AD8AC6 /* InfoPlist.strings in Resources */,
 				18127ECB1D2FE0A900847CA0 /* PYJSettingCell.xib in Resources */,
 				18127EB21D2F954100847CA0 /* PYJAboutUsController.xib in Resources */,
 				18127EAD1D2F828400847CA0 /* PYJSettingController.xib in Resources */,
-				18127EB91D2FA94C00847CA0 /* aboutUs.txt in Resources */,
 				18127ECF1D2FE60400847CA0 /* member_ diamond_icon.gif in Resources */,
+				180E375B1D33927000FB2399 /* Chanese.strings in Resources */,
+				180ED0541D33FBBC0053CFAC /* aboutUsEN.txt in Resources */,
 				18127E6F1D2F4E9000847CA0 /* LaunchScreen.storyboard in Resources */,
-				18127EC41D2FCF9100847CA0 /* PYJCustomController.xib in Resources */,
+				18127EC41D2FCF9100847CA0 /* PYJSettingLanguageController.xib in Resources */,
+				180ED0551D33FBBC0053CFAC /* aboutUsCHS.txt in Resources */,
 				18127E6C1D2F4E9000847CA0 /* Assets.xcassets in Resources */,
 				18127EA41D2F764000847CA0 /* calculator_button.gif in Resources */,
 			);
@@ -375,14 +397,16 @@
 				18127EA91D2F7D0D00847CA0 /* PYJSettingController.m in Sources */,
 				18127E981D2F4F8900847CA0 /* PYJCalculatorViewController.m in Sources */,
 				18127E991D2F4F8900847CA0 /* PYJMortgageViewController.m in Sources */,
+				180ED0511D33C5540053CFAC /* PYJLanguageManager.m in Sources */,
 				18127EBC1D2FAF3E00847CA0 /* PYJNavigationController.m in Sources */,
 				18127E641D2F4E9000847CA0 /* AppDelegate.m in Sources */,
 				18127E9D1D2F6FD300847CA0 /* UIImage+animatedGIF.m in Sources */,
 				18127ECA1D2FE0A900847CA0 /* PYJSettingCell.m in Sources */,
 				18127E611D2F4E9000847CA0 /* main.m in Sources */,
 				18127EBF1D2FB18400847CA0 /* UIView+PYJFrameExtension.m in Sources */,
-				18127EC21D2FCF8300847CA0 /* PYJCustomController.m in Sources */,
+				18127EC21D2FCF8300847CA0 /* PYJSettingLanguageController.m in Sources */,
 				18127EB11D2F954100847CA0 /* PYJAboutUsController.m in Sources */,
+				180ED04E1D33B2860053CFAC /* PYJCHSLanguage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +446,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18127E6E1D2F4E9000847CA0 /* Base */,
+				180ED0491D33AE6C0053CFAC /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -430,7 +455,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18E3A7831D332F4800AD8AC6 /* en */,
-				18E3A78A1D333E1800AD8AC6 /* zh-Hans */,
+				180ED04A1D33AE6C0053CFAC /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -439,7 +464,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				18E3A7891D33323900AD8AC6 /* en */,
-				18E3A78B1D333E1800AD8AC6 /* zh-Hans */,
+				180ED04B1D33AE6C0053CFAC /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -531,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "贷款计算器/PrefixHeader.pch";
 				INFOPLIST_FILE = "贷款计算器/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -544,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "贷款计算器/PrefixHeader.pch";
 				INFOPLIST_FILE = "贷款计算器/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

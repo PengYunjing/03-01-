@@ -6,39 +6,5 @@
   Copyright © 2016年 PYJ. All rights reserved.
 */
 
-"titleKey" = "Loan calculator";
-
-"totalLoanKey" = "Total loan";
-
-"totalLoanPlaceholderKey" = "Please enter...";
-
-"mortgageYearKey" = "Mortgage year";
-
-"mortgageYearPlaceholderKey" = "Please enter...";
-
-"annualRateKey" = "Annual rate";
-
-"annualRatePlaceholderKey" = "Please enter...";
-
-"totalLoanUnitKey" = "$";
-
-"mortgageYearUnitKey" = "year";
-
-"equalInstallmentPaymentKey" = "Equal installment";
-
-"equalRepaymentOfPrincipalKey" = "Equal of principal";
-
-"computeKey" = "Compute";
-
-"emptyKey" = "Empty";
-
-"TotalAmountOfRepaymentKey" = "Amount of repayment($)";
-
-"TotalPaymentOfInterestKey" = "Amount of interest($)";
-
-"eachRepaymentAmountKey" = "Each repayment($)";
-
-"numberKey" = "No.";
-
-"paymentKey" = "Payment(Principal/Interest)($)";
+"languageStringsName" = "English.strings";
 

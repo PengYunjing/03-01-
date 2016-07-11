@@ -7,13 +7,20 @@
 //
 
 #import "PYJNavigationController.h"
-#import "UIView+PYJFrameExtension.h"
+//#import "PYJMortgageViewController.h"
+
 
 @interface PYJNavigationController ()
 
 @end
 
 @implementation PYJNavigationController
+
+//- (instancetype)initWithRootViewController:(UIViewController *)rootViewController
+//{
+//    PYJMortgageViewController *vc = [[PYJMortgageViewController alloc] init];
+//    return [self initWithRootViewController:vc];
+//}
 
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
@@ -39,9 +46,12 @@
     [super pushViewController:viewController animated:animated];
 }
 
+
+
 - (void)back
 {
-    [self popViewControllerAnimated:NO];
+    [self popViewControllerAnimated:YES];
 }
+
 
 @end
