@@ -35,7 +35,7 @@ static NSString *const PYJSettingLanguageCellID = @"PYJSettingLanguageCellID";
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -52,6 +52,22 @@ static NSString *const PYJSettingLanguageCellID = @"PYJSettingLanguageCellID";
     if (indexPath.row == 1) {
         cell.textLabel.text = @"简体中文";
         if ([LanguageManager.dataName isEqualToString:@"Chanese.strings"]) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        } else {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+        }
+    }
+    if (indexPath.row == 2) {
+        cell.textLabel.text = @"繁體中文";
+        if ([LanguageManager.dataName isEqualToString:@"HongKong.strings"]) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        } else {
+            cell.accessoryType = UITableViewCellAccessoryNone;
+        }
+    }
+    if (indexPath.row == 3) {
+        cell.textLabel.text = @"한국의";
+        if ([LanguageManager.dataName isEqualToString:@"Korean.strings"]) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         } else {
             cell.accessoryType = UITableViewCellAccessoryNone;
@@ -79,17 +95,29 @@ static NSString *const PYJSettingLanguageCellID = @"PYJSettingLanguageCellID";
         self.title = LanguageForKey(@"languageTypeKey");
 
     }
+    if (indexPath.row == 2) {
+        LanguageManager.dataName = @"HongKong.strings";
+        LanguageManager.languageDict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:LanguageManager.dataName ofType:nil]];
+        LanguageManager.languageChange = YES;
+        
+        [self.tableview reloadData];
+        self.title = LanguageForKey(@"languageTypeKey");
+        
+    }
+    if (indexPath.row == 3) {
+        LanguageManager.dataName = @"Korean.strings";
+        LanguageManager.languageDict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:LanguageManager.dataName ofType:nil]];
+        LanguageManager.languageChange = YES;
+        
+        [self.tableview reloadData];
+        self.title = LanguageForKey(@"languageTypeKey");
+        
+    }
+    
 }
-//
-//- (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath
-//{
-//    if(indexPath.row == self.currentIndex){
-//        return UITableViewCellAccessoryCheckmark;
-//    }
-//    else{
-//        return UITableViewCellAccessoryNone;
-//    }
-//}
+
+
+
 
 
 

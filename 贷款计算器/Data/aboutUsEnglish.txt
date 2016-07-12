@@ -1,0 +1,1 @@
+This is a calculation of the mortgage loan calculator, the integration of a simple calculator (the upper right corner of the button). Convenient, simple, without any advertising harassment!

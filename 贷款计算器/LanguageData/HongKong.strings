@@ -1,0 +1,36 @@
+/* 
+  HongKong.strings
+  贷款计算器
+
+  Created by Apple on 16/7/12.
+  Copyright © 2016年 PYJ. All rights reserved.
+*/
+
+"titleKey" = "貸款計算器";
+"totalLoanKey" = "貸款總額";
+"totalLoanPlaceholderKey" = "請輸入金額…";
+"mortgageYearKey" = "貸款期限";
+"mortgageYearPlaceholderKey" = "請輸入期限…";
+"annualRateKey" = "年利率";
+"annualRatePlaceholderKey" = "請輸入利率…";
+"totalLoanUnitKey" = "HK$";
+"mortgageYearUnitKey" = "年";
+"equalInstallmentPaymentKey" = "等額本息";
+"equalRepaymentOfPrincipalKey" = "等額本金";
+"computeKey" = "計算";
+"emptyKey" = "清空";
+"TotalAmountOfRepaymentKey" = "累計還款總額(HK$)";
+"TotalPaymentOfInterestKey" = "累計支付利息(HK$)";
+"eachRepaymentAmountKey" = "每期還款(HK$)";
+"numberKey" = "期数";
+"paymentKey" = "本期还款(本金/利息)(HK$)";
+"irregularKey" = "不固定";
+"warningEnterAmountKey" = "請輸入貸款總額(HK$)";
+"warningLoanPeriodKey" = "請輸入貸款期限(年)";
+"warningAnnualInterestRateKey" = "請輸入年利率(%)";
+"okKey" = "確定";
+"settingTitleKey" = "設定";
+"versionKey" = "版本：1.0";
+"languageTypeKey" = "語言";
+"aboutKey" = "關於";
+"appraiseKey" = "評估";

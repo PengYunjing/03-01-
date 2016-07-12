@@ -1,0 +1,36 @@
+/* 
+  Korean.strings
+  贷款计算器
+
+  Created by Apple on 16/7/12.
+  Copyright © 2016年 PYJ. All rights reserved.
+*/
+
+"titleKey" = "대출 계산기";
+"totalLoanKey" = "총 대출";
+"totalLoanPlaceholderKey" = "입력하세요...";
+"mortgageYearKey" = "대출 기간";
+"mortgageYearPlaceholderKey" = "입력하세요...";
+"annualRateKey" = "이자율（년）";
+"annualRatePlaceholderKey" = "입력하세요...";
+"totalLoanUnitKey" = "원";
+"mortgageYearUnitKey" = "년";
+"equalInstallmentPaymentKey" = "원리금 균등 분할";
+"equalRepaymentOfPrincipalKey" = "평등 주";
+"computeKey" = "계산";
+"emptyKey" = "맑은";
+"TotalAmountOfRepaymentKey" = "총 상환(원)";
+"TotalPaymentOfInterestKey" = "이자의 지급(원)";
+"eachRepaymentAmountKey" = "각 상환(원)";
+"numberKey" = "할부";
+"paymentKey" = "상환(주요한/이자)(원)";
+"irregularKey" = "고정되지 않음";
+"warningEnterAmountKey" = "대출의 총 금액을 입력하세요(원)";
+"warningLoanPeriodKey" = "대출 기간을 입력하세요(년)";
+"warningAnnualInterestRateKey" = "연간 이자율을 입력 해주세요(%)";
+"okKey" = "결정";
+"settingTitleKey" = "설정";
+"versionKey" = "버전 정보：1.0";
+"languageTypeKey" = "언어";
+"aboutKey" = "회사 소개";
+"appraiseKey" = "평가";

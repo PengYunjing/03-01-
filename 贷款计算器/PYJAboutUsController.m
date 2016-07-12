@@ -31,10 +31,16 @@
     
     NSString *stringName = nil;
     if ([LanguageManager.dataName isEqualToString:@"English.strings"]) {
-        stringName = @"aboutUsEN.txt";
+        stringName = @"aboutUsEnglish.txt";
     }
     if ([LanguageManager.dataName isEqualToString:@"Chanese.strings"]) {
-        stringName = @"aboutUsCHS.txt";
+        stringName = @"aboutUsChanese.txt";
+    }
+    if ([LanguageManager.dataName isEqualToString:@"HongKong.strings"]) {
+        stringName = @"aboutUsHongKong.txt";
+    }
+    if ([LanguageManager.dataName isEqualToString:@"Korean.strings"]) {
+        stringName = @"aboutUsKorean.txt";
     }
     
     NSString *string = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:stringName ofType:nil] encoding:NSUTF8StringEncoding error:nil];

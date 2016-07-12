@@ -142,7 +142,7 @@
     backButton = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain  target:self action:nil];
     self.navigationItem.backBarButtonItem = backButton;
     
-    self.titleLabel.text = LanguageForKey(@"totalLoanKey");
+    self.titleLabel.text = LanguageForKey(@"titleKey");
     self.totalLoanLabel.text = LanguageForKey(@"totalLoanKey");
     self.mortgageYearLabel.text = LanguageForKey(@"mortgageYearKey");
     self.annualRateLabel.text = LanguageForKey(@"annualRateKey");
@@ -255,7 +255,8 @@
     [self.everyMoney removeAllObjects];
     [self.view endEditing:YES];
     
-    double p = self.principalField.text.doubleValue * 10000; // 贷款金额
+
+    double p = self.principalField.text.doubleValue; // 贷款金额
     double i = 0.01 * self.rate.text.doubleValue / 12; // 月利率
     double n = self.durationTime.text.doubleValue * 12; // 还款期数(按月算)
     double a = (p * i * pow(1 + i, n)) / (pow(1 + i, n) - 1); // 每月还本付息金额
@@ -299,7 +300,7 @@
     [self.everyMoney removeAllObjects];
     [self.view endEditing:YES];
     
-    double p = self.principalField.text.doubleValue * 10000; // 贷款金额
+    double p = self.principalField.text.doubleValue; // 贷款金额
     double i = 0.01 * self.rate.text.doubleValue / 12; // 月利率
     double n = self.durationTime.text.doubleValue * 12; // 还款期数(按月算)
     

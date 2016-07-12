@@ -1,0 +1,36 @@
+/* 
+  German.strings
+  贷款计算器
+
+  Created by Apple on 16/7/12.
+  Copyright © 2016年 PYJ. All rights reserved.
+*/
+
+"titleKey" = "Darlehen - Rechner";
+"totalLoanKey" = "Total Darlehen";
+"totalLoanPlaceholderKey" = "Bitte geben Sie...";
+"mortgageYearKey" = "Frist";
+"mortgageYearPlaceholderKey" = "Bitte geben Sie...";
+"annualRateKey" = "Zinssatz";
+"annualRatePlaceholderKey" = "Bitte geben Sie...";
+"totalLoanUnitKey" = "Euro";
+"mortgageYearUnitKey" = "Jahr";
+"equalInstallmentPaymentKey" = "Equal installments of principal and interest";
+"equalRepaymentOfPrincipalKey" = "Der nominalbetrag";
+"computeKey" = "Berechnung";
+"emptyKey" = "Leer";
+"TotalAmountOfRepaymentKey" = "Die höhe der rückzahlung";
+"TotalPaymentOfInterestKey" = "Die zinszahlungen";
+"eachRepaymentAmountKey" = "Tranche rückzahlung";
+"numberKey" = "Digitale";
+"paymentKey" = "Rückzahlung(Kapital und zinsen)(Euro)";
+"irregularKey" = "Anders";
+"warningEnterAmountKey" = "Bitte geben Sie den Gesamtbetrag der Kredite(Euro)";
+"warningLoanPeriodKey" = "请输入贷款期限(年)";
+"warningAnnualInterestRateKey" = "请输入年利率(%)";
+"okKey" = "确定";
+"settingTitleKey" = "设置";
+"versionKey" = "版本：1.0";
+"languageTypeKey" = "语言";
+"aboutKey" = "关于";
+"appraiseKey" = "评价";

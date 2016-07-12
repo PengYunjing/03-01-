@@ -171,13 +171,13 @@
                                 <rect key="frame" x="0.0" y="269" width="375" height="398"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计还款总额(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtd-iO-iAX">
-                                        <rect key="frame" x="20" y="10" width="131" height="21"/>
+                                        <rect key="frame" x="20" y="62" width="131" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsB-v6-7pE">
-                                        <rect key="frame" x="230" y="10" width="125" height="21"/>
+                                        <rect key="frame" x="230" y="62" width="125" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="125" id="Ahk-jM-Pwd"/>
                                         </constraints>
@@ -185,20 +185,14 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计支付利息(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeR-J0-Atv">
-                                        <rect key="frame" x="20" y="36" width="131" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每期还款(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGY-9j-cYD">
-                                        <rect key="frame" x="20" y="62" width="97" height="21"/>
+                                        <rect key="frame" x="20" y="10" width="97" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77P-E1-OyD">
-                                        <rect key="frame" x="230" y="62" width="125" height="21"/>
+                                        <rect key="frame" x="230" y="10" width="125" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="125" id="7T4-8e-zal"/>
                                         </constraints>
@@ -270,6 +264,12 @@
                                             </mask>
                                         </variation>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计支付利息(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeR-J0-Atv">
+                                        <rect key="frame" x="20" y="36" width="131" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="AWP-EV-Y3f" firstAttribute="top" secondItem="77P-E1-OyD" secondAttribute="bottom" constant="10" id="34g-zS-A87"/>
@@ -278,6 +278,7 @@
                                     <constraint firstItem="wyd-sb-FZZ" firstAttribute="leading" secondItem="yCC-s0-ChK" secondAttribute="leading" constant="5" id="Ljj-zQ-EwF"/>
                                     <constraint firstAttribute="trailing" secondItem="AWP-EV-Y3f" secondAttribute="trailing" id="Nm2-Cj-bV5"/>
                                     <constraint firstItem="aGY-9j-cYD" firstAttribute="top" secondItem="FeR-J0-Atv" secondAttribute="bottom" constant="5" id="Rkj-j7-m7v"/>
+                                    <constraint firstItem="Jtd-iO-iAX" firstAttribute="top" secondItem="aGY-9j-cYD" secondAttribute="bottom" constant="40" id="Tjk-Pm-U1r"/>
                                     <constraint firstItem="FeR-J0-Atv" firstAttribute="leading" secondItem="Jtd-iO-iAX" secondAttribute="leading" id="Txw-mB-XHD"/>
                                     <constraint firstAttribute="bottom" secondItem="wyd-sb-FZZ" secondAttribute="bottom" id="Tz6-5P-3QI"/>
                                     <constraint firstItem="77P-E1-OyD" firstAttribute="centerY" secondItem="aGY-9j-cYD" secondAttribute="centerY" id="UOl-p1-S0D"/>
@@ -286,16 +287,27 @@
                                     <constraint firstItem="AWP-EV-Y3f" firstAttribute="leading" secondItem="yCC-s0-ChK" secondAttribute="leading" id="adZ-q5-mkg"/>
                                     <constraint firstItem="xsB-v6-7pE" firstAttribute="centerY" secondItem="Jtd-iO-iAX" secondAttribute="centerY" id="b86-0A-HOI"/>
                                     <constraint firstItem="FeR-J0-Atv" firstAttribute="top" secondItem="Jtd-iO-iAX" secondAttribute="bottom" constant="5" id="d14-nL-i4i"/>
+                                    <constraint firstItem="AWP-EV-Y3f" firstAttribute="top" secondItem="xsB-v6-7pE" secondAttribute="bottom" constant="10" id="d86-Kh-nMB"/>
+                                    <constraint firstItem="aGY-9j-cYD" firstAttribute="top" secondItem="yCC-s0-ChK" secondAttribute="top" constant="10" id="eJU-Ne-WcT"/>
                                     <constraint firstItem="wyd-sb-FZZ" firstAttribute="top" secondItem="AWP-EV-Y3f" secondAttribute="bottom" id="fcw-bl-Rrm"/>
                                     <constraint firstAttribute="trailing" secondItem="xsB-v6-7pE" secondAttribute="trailing" constant="20" id="jV2-gX-V6B"/>
                                     <constraint firstItem="eoH-U0-R3v" firstAttribute="centerY" secondItem="FeR-J0-Atv" secondAttribute="centerY" id="lXP-QB-RSo"/>
                                     <constraint firstItem="77P-E1-OyD" firstAttribute="trailing" secondItem="eoH-U0-R3v" secondAttribute="trailing" id="lon-1t-jQv"/>
-                                    <constraint firstItem="Jtd-iO-iAX" firstAttribute="top" secondItem="yCC-s0-ChK" secondAttribute="top" constant="10" id="qHl-0F-mXn"/>
+                                    <constraint firstItem="AWP-EV-Y3f" firstAttribute="top" secondItem="eoH-U0-R3v" secondAttribute="bottom" constant="10" id="q0C-h3-IZ5"/>
+                                    <constraint firstItem="Jtd-iO-iAX" firstAttribute="top" secondItem="yCC-s0-ChK" secondAttribute="top" constant="50" id="qHl-0F-mXn"/>
+                                    <constraint firstItem="FeR-J0-Atv" firstAttribute="top" secondItem="aGY-9j-cYD" secondAttribute="bottom" constant="5" id="rKy-8J-bqp"/>
+                                    <constraint firstItem="Jtd-iO-iAX" firstAttribute="top" secondItem="FeR-J0-Atv" secondAttribute="bottom" constant="5" id="rYK-Sh-bC6"/>
                                     <constraint firstItem="aGY-9j-cYD" firstAttribute="trailing" secondItem="Jtd-iO-iAX" secondAttribute="trailing" id="yNo-hE-eaW"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="Rkj-j7-m7v"/>
                                         <exclude reference="yNo-hE-eaW"/>
+                                        <exclude reference="d14-nL-i4i"/>
+                                        <exclude reference="Tjk-Pm-U1r"/>
+                                        <exclude reference="qHl-0F-mXn"/>
+                                        <exclude reference="34g-zS-A87"/>
+                                        <exclude reference="q0C-h3-IZ5"/>
                                     </mask>
                                 </variation>
                             </view>

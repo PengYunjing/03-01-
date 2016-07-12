@@ -24,7 +24,7 @@
 "eachRepaymentAmountKey" = "Each repayment($)";
 "numberKey" = "No.";
 "paymentKey" = "Payment(Principal/Interest)($)";
-"irregularKey" = "irregular";
+"irregularKey" = "Not average";
 "warningEnterAmountKey" = "Please enter the total amount of the loan($)";
 "warningLoanPeriodKey" = "Please enter the loan period (year)";
 "warningAnnualInterestRateKey" = "Please enter the annual interest rate(%)";
